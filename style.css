@@ -56,20 +56,17 @@ body {
     font-family: var(--font-sans);
     height: 100vh;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
+    overflow-y: auto;
 }
 
-/* Main container - full height scrolling */
+/* Main container - centered content */
 .container {
     display: flex;
     flex-direction: row;
     gap: 2rem;
     width: 90%;
     max-width: 1200px;
-    height: 100%;
-    overflow-y: auto;
+    margin: 0 auto;
     /* No background here; each side gets its own */
 }
 
