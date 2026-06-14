@@ -54,23 +54,22 @@ body {
     background-color: var(--bg-color);
     color: var(--primary-color);
     font-family: var(--font-sans);
-    min-height: 100vh;
+    height: 100vh;
+    margin: 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 2rem 0;
-    overflow-y: auto;
-    box-sizing: border-box;
-    position: relative;
+    justify-content: center;
+    overflow: hidden;
 }
 
-/* Main container - just a flex wrapper */
+/* Main container - full height scrolling */
 .container {
     display: flex;
+    flex-direction: column;
     gap: 2rem;
     width: 90%;
     max-width: 1200px;
+    height: 100%;
+    overflow-y: auto;
     /* No background here; each side gets its own */
 }
 
@@ -269,6 +268,7 @@ body {
     }
     .tab-section {
         order: 2;
+        flex: 1 0 0; /* Take remaining vertical space */
     }
     /* Reduce profile circle size */
     .profile-circle {
@@ -306,6 +306,7 @@ body {
     /* Tab content */
     .tab-content {
         padding: 1rem;
+        overflow-y: auto; /* Ensure scrollable */
     }
     /* Series list */
     .series-list {
