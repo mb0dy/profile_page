@@ -64,7 +64,7 @@ body {
 /* Main container - full height scrolling */
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 2rem;
     width: 90%;
     max-width: 1200px;
