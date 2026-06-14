@@ -54,11 +54,14 @@ body {
     background-color: var(--bg-color);
     color: var(--primary-color);
     font-family: var(--font-sans);
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
+    padding: 2rem 0;
+    overflow-y: auto;
+    box-sizing: border-box;
     position: relative;
 }
 
