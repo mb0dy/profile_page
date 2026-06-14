@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Profile & Series Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Side: Profile & Socials -->
+        <aside class="profile-section">
+            <div class="profile-circle">
+                <img src="./Profile_photo.jpg" alt="Profile Photo" id="profile-img">
+            </div>
+            <div class="info">
+                <h1 id="nickname">mxvorbtw</h1>
+                <p id="fullname">Vahe Hambardzumyan</p>
+            </div>
+            <nav class="socials">
+                <a href="https://instagram.com/mxvorbtw" class="social-icon" data-platform="instagram" aria-label="Instagram">
+                    <img src="./svg/instagram-1-svgrepo-com.png" alt="Instagram">
+                </a>
+                <a href="https://t.me/mxvorbtw" class="social-icon" data-platform="telegram" aria-label="Telegram">
+                    <img src="./svg/telegram-svgrepo-com.png" alt="Telegram">
+                </a>
+                <a href="https://tiktok.com/@mxvor.ae" class="social-icon" data-platform="tiktok" aria-label="TikTok">
+                    <img src="./svg/tiktok-icon-white-1-logo-svgrepo-com.png" alt="TikTok">
+                </a>
+                <!-- Add more social icons here -->
+            </nav>
+        </aside>
+
+        <!-- Right Side: Series Tabs -->
+        <section class="tab-section">
+            <div class="tab-header">
+                <button class="tab-btn active" data-tab="seen">Seen</button>
+                <button class="tab-btn" data-tab="want">Want to See</button>
+                <button class="tab-btn" data-tab="watching">Watching</button>
+            </div>
+            <div class="tab-content">
+                <!-- Seen Tab -->
+                <div id="seen" class="tab-pane active">
+                    <ul class="series-list">
+                        <li class="series-item">
+                            <img src="https://via.placeholder.com/300/ff6f61/ffffff?text=Supernatural" alt="Supernatural">
+                            <div class="series-title">Supernatural</div>
+                        </li>
+                        <li class="series-item">
+                            <img src="https://via.placeholder.com/300/ff6f61/ffffff?text=Wayne" alt="Wayne">
+                            <div class="series-title">Wayne</div>
+                        </li>
+                        <li class="series-item">
+                            <img src="https://via.placeholder.com/300/ff6f61/ffffff?text=The+Boys" alt="The Boys">
+                            <div class="series-title">The Boys</div>
+                        </li>
+                        <li class="series-item">
+                            <img src="https://via.placeholder.com/300/ff6f61/ffffff?text=Better+Call+Saul" alt="Better Call Saul">
+                            <div class="series-title">Better Call Saul</div>
+                        </li>
+                        <li class="series-item">
+                            <img src="https://via.placeholder.com/300/ff6f61/ffffff?text=Dexter" alt="Dexter">
+                            <div class="series-title">Dexter</div>
+                        </li>
+                        <li class="series-item">
+                            <img src="https://via.placeholder.com/300/ff6f61/ffffff?text=Dexter:Resurrection" alt="Dexter: Resurrection">
+                            <div class="series-title">Dexter: Resurrection</div>
+                        </li>
+                        <li class="series-item">
+                            <img src="https://via.placeholder.com/300/ff6f61/ffffff?text=Attack+on+Titan" alt="Attack on Titan">
+                            <div class="series-title">Attack on Titan</div>
+                        </li>
+                        <li class="series-item">
+                            <img src="https://via.placeholder.com/300/ff6f61/ffffff?text=Hannibal" alt="Hannibal">
+                            <div class="series-title">Hannibal</div>
+                        </li>
+                        <li class="series-item">
+                            <img src="https://via.placeholder.com/300/ff6f61/ffffff?text=Invincible" alt="Invincible">
+                            <div class="series-title">Invincible</div>
+                        </li>
+                        <li class="series-item">
+                            <img src="https://via.placeholder.com/300/ff6f61/ffffff?text=Jujutsu+Kaisen" alt="Jujutsu Kaisen">
+                            <div class="series-title">Jujutsu Kaisen</div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Want to See Tab -->
+                <div id="want" class="tab-pane">
+                    <ul class="series-list">
+                        <li class="series-item">
+                            <img src="https://via.placeholder.com/300/ff6f61/ffffff?text=The+Witcher" alt="The Witcher">
+                            <div class="series-title">The Witcher</div>
+                        </li>
+                        <li class="series-item">
+                            <img src="https://via.placeholder.com/300/ff6f61/ffffff?text=Shang-Chi" alt="Shang-Chi">
+                            <div class="series-title">Shang-Chi</div>
+                        </li>
+                        <li class="series-item">
+                            <img src="https://via.placeholder.com/300/ff6f61/ffffff?text=Loki" alt="Loki">
+                            <div class="series-title">Loki</div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Watching Tab -->
+                <div id="watching" class="tab-pane">
+                    <ul class="series-list">
+                        <li class="series-item">
+                            <img src="https://via.placeholder.com/300/ff6f61/ffffff?text=Mandalorian" alt="Mandalorian">
+                            <div class="series-title">Mandalorian</div>
+                        </li>
+                        <li class="series-item">
+                            <img src="https://via.placeholder.com/300/ff6f61/ffffff?text=Euphoria" alt="Euphoria">
+                            <div class="series-title">Euphoria</div>
+                        </li>
+                        <li class="series-item">
+                            <img src="https://via.placeholder.com/300/ff6f61/ffffff?text=Ted+Lasso" alt="Ted Lasso">
+                            <div class="series-title">Ted Lasso</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
