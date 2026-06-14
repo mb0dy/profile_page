@@ -258,10 +258,10 @@ body {
         max-width: none;
     }
     .profile-section {
-        order: 2;
+        order: 1;
     }
     .tab-section {
-        order: 1;
+        order: 2;
     }
 }
 @media (max-width: 480px) {
